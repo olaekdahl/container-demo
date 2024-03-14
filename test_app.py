@@ -8,7 +8,7 @@ class AppTestCase(unittest.TestCase):
     def test_hello_container(self):
         response = self.app.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data.decode('utf-8'), 'Hello, container v2!')
+        self.assertEqual(response.data.decode('utf-8'), 'Hello, container v4!')
 
 if __name__ == '__main__':
     unittest.main()
