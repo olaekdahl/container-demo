@@ -11,6 +11,7 @@ def hello_container():
 
 @app.route('/metadata')
 def metadata():
+    client = docker.from_env()
     # Assuming you have passed the container ID as an environment variable
     container_id = os.environ.get('CONTAINER_ID')
     if not container_id:
