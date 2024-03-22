@@ -3,7 +3,6 @@ import docker
 import os
 
 app = Flask(__name__)
-client = docker.from_env()
 
 @app.route('/')
 def hello_container():
